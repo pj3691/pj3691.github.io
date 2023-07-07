@@ -64,11 +64,28 @@
     -webkit-align-items: center;
     align-items: center;
     overflow: hidden;
-    height: 14.8em;
-    border: 4px solid;
-    border-color: #a6a6e3;
-    border-radius: 20px;
-    background-color: #ffffffc2;
+    height: 16.8em;
+    border: 4px solid !important;
+    border-color: #a6a6e3 !important;
+    border-radius: 20px !important;
+    background-color: #ffffffc2 !important;
+}
+
+@media screen and (max-width: 768px){
+    #recent-posts > .recent-post-item {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: auto;
+}
+}
+
+
+#aside-content {
+    width: 26%;
 }
 
 #aside-content .card-widget {
