@@ -36,7 +36,13 @@
     display: inline;
     position: absolute;
     left: 40%;
+    font-family: 'Candyhome', sans-serif !important;
+    font-size: 27px;
     /* margin: auto; */
+}
+
+#site-title, #site-subtitle, .site-name, #aside-content .author-info__name, #aside-content .author-info__description {
+    font-family: 'Candyhome', sans-serif !important;
 }
 
 #recent-posts > .recent-post-item .post_cover {
@@ -286,4 +292,21 @@ div#main_top {
         text-align: center;
         margin-right: 20px;
     }
+}
+
+/*字体*/
+@font-face{
+    font-family:'Candyhome' ;  /* 字体名自定义即可 */
+    src:url('/ss/song.ttf'); /* 字体文件路径 */
+    font-display : swap;
+  }
+  @font-face{
+    font-family:'boddy' ;  /* 字体名自定义即可 */
+    src:url('/ss/kaishu.ttf'); /* 字体文件路径 */
+    font-display : swap;
+  }
+  
+body{
+    font-family:'boddy' ;
+    font-size: 20px;
 }
