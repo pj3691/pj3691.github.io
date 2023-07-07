@@ -38,12 +38,22 @@
     left: 40%;
     /* margin: auto; */
 }
+
 #recent-posts > .recent-post-item .post_cover {
     overflow: hidden;
     width: 42%;
     height: 100%;
     border-radius: 17px 20px 20px 17px;
     /* right: 5%; */
+}
+@media screen and (max-width: 768px){
+    #recent-posts > .recent-post-item .post_cover {
+        overflow: hidden;
+        width: 100%;
+        height: 50%;
+        border-radius: 17px 20px 20px 17px;
+        /* right: 5%; */
+    }
 }
 
 #recent-posts > .recent-post-item {
@@ -64,13 +74,12 @@
     -webkit-align-items: center;
     align-items: center;
     overflow: hidden;
-    height: 16.8em;
+    height: 14.8em;
     border: 4px solid !important;
     border-color: #a6a6e3 !important;
     border-radius: 20px !important;
     background-color: #ffffffc2 !important;
 }
-
 @media screen and (max-width: 768px){
     #recent-posts > .recent-post-item {
     -webkit-box-orient: vertical;
@@ -80,12 +89,17 @@
     -ms-flex-direction: column;
     flex-direction: column;
     height: auto;
+    overflow: hidden;
 }
 }
-
 
 #aside-content {
     width: 26%;
+}
+@media screen and (max-width: 768px){
+    #aside-content {
+        width: 100% !important;
+    }    
 }
 
 #aside-content .card-widget {
@@ -98,6 +112,19 @@
     border-radius: 20px;
     background-color: #ffffffc2;
 }
+@media screen and (max-width: 768px){
+    #aside-content .card-widget {
+        position: relative;
+        overflow: hidden;
+        margin-top: 20px;
+        padding: 5px 15px;
+        border: 4px solid;
+        border-color: #a6a6e3;
+        border-radius: 20px;
+        background-color: #ffffffc2;
+        width: 100% !important;
+    }
+}
 
 .layout  > div:first-child:not(.recent-posts) {
     -webkit-align-self: flex-start;
@@ -109,6 +136,7 @@
     border-radius: 20px;
     background-color: #ffffffc2;
 }
+
 .layout  > div:first-child:not(.recent-posts)::before {
     content: "";
     position: absolute;
@@ -125,6 +153,7 @@
     bottom:0;
     top:0;
 }
+
 #page-header:not(.not-top-img):before {
     position: absolute;
     width: 100%;
@@ -133,6 +162,7 @@
     content: '';
     filter: blur(24px);
 }
+
 #post .post-copyright {
     position: relative;
     margin: 40px 0 10px;
@@ -147,6 +177,8 @@
     -ms-transition: box-shadow 0.3s ease-in-out;
     transition: box-shadow 0.3s ease-in-out;
 }
+
+
 /*鼠标*/
 body,
 span,
